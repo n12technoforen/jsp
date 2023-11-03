@@ -1,22 +1,14 @@
 import { useState } from 'react'
 
 function App() {
-  const [number, setNumber] = useState(0)
 
-  
-  const handleIncrement = ()=> {
-    setNumber(number+1)
-  }
   return (
     <>
       <div>
-     <button onClick={handleIncrement}>Increment</button>
+     <h1>Hello World</h1>
       </div>
 
-      <div>
-        {number}
-      </div>
-   
+    
     </>
   )
 }
