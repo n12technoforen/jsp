@@ -2,13 +2,23 @@ import { useState } from 'react'
 
 function App() {
 
+  const [number,setNumber] = useState(0);
+
+
+  const increaseAsync =  ()=> {
+    setTimeout(()=> {
+      setNumber(number+1)
+    },3000)
+  }
+
   return (
     <>
       <div>
-     <h1>Hello World</h1>
+          
+          <button onClick={increaseAsync}>IncreaseAsyn</button>
       </div>
 
-    
+        {number}
     </>
   )
 }
