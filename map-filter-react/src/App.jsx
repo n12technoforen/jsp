@@ -1,12 +1,20 @@
 import { useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [number, setNumber] = useState(0)
 
+  
+  const handleIncrement = ()=> {
+    setNumber(number+1)
+  }
   return (
     <>
       <div>
-     NITHIN
+     <button onClick={handleIncrement}>Increment</button>
+      </div>
+
+      <div>
+        {number}
       </div>
    
     </>
